@@ -21,6 +21,13 @@ Make a soft link from here to the sample directory in order to run the example f
 ln -s /path/to/sample/dir Samples/
 ```
 
+On lxplus one would do
+
+```
+ln -s /afs/cern.ch/user/c/chenyi/EOSBox/Share/17364_DiscretizedJetSample// Samples/
+```
+
+
 ## Executables
 
 ### bin/BasicJetImageAnalysis

@@ -247,8 +247,8 @@ std::pair<double, double> GetCoefficient(JetImage &Image, int KX, int KY)
 
 JetMode Transform(JetImage &Image, int KeepMinX, int KeepMaxX, int KeepMinY, int KeepMaxY)
 {
-   while(KeepMinX < 0)   KeepMinX = KeepMinX + Image.Size;
-   while(KeepMinY < 0)   KeepMinY = KeepMinY + Image.Size;
+   if(KeepMinX < 0)   KeepMinX = KeepMinX + Image.Size;
+   if(KeepMinY < 0)   KeepMinY = KeepMinY + Image.Size;
 
    JetMode Result(Image.Size);
 

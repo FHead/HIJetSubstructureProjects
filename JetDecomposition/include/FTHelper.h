@@ -5,7 +5,9 @@
 class JetImage;
 class JetMode;
 std::pair<double, double> GetCoefficient(JetImage &Image, int KX, int KY);
-JetMode Transform(JetImage &Image, int KeepMinX = -10, int KeepMaxX = 10, int KeepMinY = -10, int KeepMaxY = 10);
+JetMode Transform(JetImage &Image,
+   int KeepMinX = -1000, int KeepMaxX = 1000,
+   int KeepMinY = -1000, int KeepMaxY = 1000);
 JetImage Transform(JetMode &Mode);
 double GetPhase(double x, double y);
 double GetSize(double x, double y);

@@ -6,7 +6,7 @@ RunAll: RunBasicJetImageAnalysis
 
 Bin/BasicJetImageAnalysis: Source/BasicJetImageAnalysis.cpp
 	g++ Source/BasicJetImageAnalysis.cpp -o ./Bin/BasicJetImageAnalysis \
-		-I./Include \
+		-I./include \
 		`root-config --glibs --cflags` \
 		`fastjet-config --cxxflags --libs`
 

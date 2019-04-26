@@ -11,6 +11,7 @@ If you type `root-config` on the command line there should be something
 We need `-std=c++17` support
 
 
+
 ## Install and run
 
 Once cloned, type `make` to compile everything
@@ -28,9 +29,10 @@ ln -s /afs/cern.ch/user/c/chenyi/EOSBox/Share/17364_DiscretizedJetSample// Sampl
 ```
 
 
+
 ## Executables
 
-### bin/BasicJetImageAnalysis
+### BasicJetImageAnalysis
 
 Runs the basic jet image analysis from Yang-ting some time ago.  Type
 
@@ -40,7 +42,11 @@ make RunBasicJetImageAnalysis
 
 to run the example
 
-### bin/TruncationTest
+
+
+
+
+### TruncationTest
 
 Runs the truncation test with Fourier transformation.  Type
 
@@ -51,4 +57,15 @@ make RunTruncationTest
 to run the example
 
 
+
+
+### FourierCatalog
+
+Runs a simple program to demonstrate the transformed result for test jets and background shapes to build intuition
+
+```
+make RunFourierCatalog
+```
+
+to run the example
 
